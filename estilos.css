@@ -43,6 +43,8 @@ video.foo {
     transform: translateX(-50%) translateY(-50%);
 
     z-index: -1;
+
+    overflow: hidden;
 }
 
 h1 {
@@ -114,55 +116,39 @@ body::before{
 
 
 /*--------------!HEADER!----------*/
-
-
-
-HEADER {
+header{
+    height: auto;
+    width: 100%;
     background-color: #000000;
     position: sticky;
     top: 0px;
-    width: 100%;
-    height: 60px;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-transform: capitalize;
-    opacity: 0.9;
     z-index: 1;
-
+    opacity: 0.9;
+}
+.navbar-collapse{
+    background-color: #000000;
+    padding-left: 20px;
+    margin: 0;
+    border-radius: 15px;
 }
 
-
-a.logo {
-    float: left;
-    color: rgb(231, 231, 231);
-    text-decoration: none;
-    padding-top: 15px;
-    padding-left: 10px;
+.nav-link{
+    color: #36d7ff !important;
+    font-family: 'Cinzel', serif;
+    font-size: 20px ;
 }
 
-.logo span {
-    color: rgb(27, 243, 225);
-    text-decoration: none;
+.nav-link:hover{
+    color: #ffffff !important;
+    font-size: 20px;
+    }    
 
-}
+.navbar-toggler{
+    border: none;
+    }
 
-.barra {
-    float: right;
-    padding: 15px;
-}
-
-.barra li {
-    list-style: none;
-    display: inline-block;
-}
-
-.barra a {
-    text-decoration: none;
-    color: rgb(19, 219, 226);
-}
-
-.barra a:hover {
-    color: #333;
+.navbar-toggler i{
+    color: #36d7ff;
 }
 
 
@@ -746,11 +732,6 @@ p.texto8 {
     }
 
     /* NOSOTROS */
-    header {
-        width: 100%;
-        height: 90px;
-        font-size: 15px;
-    }
 
     h2.sec3 {
         font-size: 20px;
@@ -905,9 +886,7 @@ p.texto8 {
     }
 
     /* NOSOTROS */
-    header {
-        font-size: 12px;
-    }
+
 
     h2.sec3 {
         font-size: 20px;
@@ -1059,10 +1038,6 @@ a.logo2{
     }
 
     /* NOSOTROS */
-
-    header {
-        font-size: 17px;
-    }
 
     .item1 {
         width: 50%;
