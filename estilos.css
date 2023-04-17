@@ -720,10 +720,11 @@ p.texto8 {
     border-radius: 10px;
 
 }
-@media only screen and (min-height: 200px) and (max-height:450px) {
+
+@media only screen and (min-height: 200px) and (max-height: 590px) {
         /* PAGINA PRINCIPAL */
         h1 {
-            font-size: 40px;
+            font-size: 30px;
         }
     
         .botones {
