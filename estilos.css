@@ -116,7 +116,7 @@ body::before{
 
 
 /*--------------!HEADER!----------*/
-header{
+header {
     height: auto;
     width: 100%;
     background-color: #000000;
@@ -125,29 +125,30 @@ header{
     z-index: 1;
     opacity: 0.9;
 }
-.navbar-collapse{
+
+.navbar-collapse {
     background-color: #000000;
     padding-left: 20px;
     margin: 0;
     border-radius: 15px;
 }
 
-.nav-link{
+.nav-link {
     color: #36d7ff !important;
     font-family: 'Cinzel', serif;
-    font-size: 20px ;
+    font-size: 20px;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: #ffffff !important;
     font-size: 20px;
-    }    
+}
 
-.navbar-toggler{
+.navbar-toggler {
     border: none;
-    }
+}
 
-.navbar-toggler i{
+.navbar-toggler i {
     color: #36d7ff;
 }
 
@@ -589,30 +590,32 @@ form.item5 {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    height: 100vh;
+    height: 1100px;
     background-size: cover;
-    overflow: hidden;
+}
+
+h4 {
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    text-shadow: #00a9c7 0px 3px 10px;
+    color: #19b2d8;
+    font-family: 'Rock Salt', cursive;
 }
 
 .item6 {
     background-color: #000000b2;
-    height: 100vh;
+    height: 1100px;
     margin-left: 200px;
     margin-right: 200px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-ul.texto6 {
-    color: #19b2d8;
-    padding-left: 50px;
-    float: left;
-    font-family: 'Rock Salt', cursive;
-
-}
-
-ul.texto7 {
-    color: #19b2d8;
-    font-family: 'Rock Salt', cursive;
-    float: right;
+iframe.video-act {
+    padding-left: 100px;
+    width: 660px;
+    height: 290px;
 }
 
 /*----------!NATACION!--------*/
@@ -648,7 +651,7 @@ a.logo2 {
     padding-top: 70px;
     padding-left: 250px;
     padding-right: 250px;
-} 
+}
 
 
 
@@ -870,6 +873,29 @@ p.texto8 {
         height: 280px;
     }
 
+    /* ACTIVIDADES */
+    .cont6 {
+        height: auto;
+    }
+
+    h4 {
+        padding-left: 0px;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        font-size: 15px;
+    }
+
+    .item6 {
+        background-color: #000000b2;
+        height: auto;
+        margin: 0;
+    }
+
+    iframe.video-act {
+        padding-left: 0px;
+        width: 100%;
+        height: 290px;
+    }
 }
 
 @media only screen and (min-width:480px) and (max-width:799px) {
@@ -970,25 +996,26 @@ p.texto8 {
         transition: all 1.5s;
     }
 
-/* NATACION */
+    /* NATACION */
 
-.cont7{
-    width: 100%;
-    background-position: center;
-    height: 350px;
-}
+    .cont7 {
+        width: 100%;
+        background-position: center;
+        height: 350px;
+    }
 
-a.logo2{
-    padding-top: 20px;
-    font-size: 40px;
-}
+    a.logo2 {
+        padding-top: 20px;
+        font-size: 40px;
+    }
 
-.texto2.natacion{
-    font-size: 30px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 80px;
-}
+    .texto2.natacion {
+        font-size: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 80px;
+    }
+
     /* METODO */
     .galeria {
         height: 350px;
@@ -1020,6 +1047,30 @@ a.logo2{
         border-radius: 10px;
         border: 0px;
         height: 280px;
+    }
+
+    /* ACTIVIDADES */
+    .cont6 {
+        height: auto;
+    }
+
+    h4 {
+        padding-left: 0px;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        font-size: 15px;
+    }
+
+    .item6 {
+        background-color: #000000b2;
+        height: auto;
+        margin: 0;
+    }
+
+    iframe.video-act {
+        padding-left: 0px;
+        width: 100%;
+        height: 300px;
     }
 }
 
@@ -1104,26 +1155,27 @@ a.logo2{
         transition: all 1.5s;
     }
 
-    
-/* NATACION */
 
-.cont7{
-    width: 100%;
-    background-position: center;
-    height: 350px;
-}
+    /* NATACION */
 
-a.logo2{
-    padding-top: 20px;
-    font-size: 40px;
-}
+    .cont7 {
+        width: 100%;
+        background-position: center;
+        height: 350px;
+    }
 
-.texto2.natacion{
-    font-size: 30px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 80px;
-}
+    a.logo2 {
+        padding-top: 20px;
+        font-size: 40px;
+    }
+
+    .texto2.natacion {
+        font-size: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 80px;
+    }
+
     /* METODO */
     .galeria {
         height: 600px;
@@ -1157,6 +1209,31 @@ a.logo2{
         height: auto;
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    /* ACTIVIDADES */
+    .cont6 {
+        height: auto;
+    }
+
+    h4 {
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        font-size: 15px;
+    }
+
+    .item6 {
+        background-color: #000000b2;
+        height: auto;
+        margin: 0;
+    }
+
+    iframe.video-act {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+        height: 300px;
     }
 }
 
@@ -1249,25 +1326,27 @@ a.logo2{
         border-radius: 50px;
         transition: all 1.5s;
     }
+
     /* NATACION */
 
-.cont7{
-    width: 100%;
-    background-position: center;
-    height: 350px;
-}
+    .cont7 {
+        width: 100%;
+        background-position: center;
+        height: 350px;
+    }
 
-a.logo2{
-    padding-top: 20px;
-    font-size: 40px;
-}
+    a.logo2 {
+        padding-top: 20px;
+        font-size: 40px;
+    }
 
-.texto2.natacion{
-    font-size: 30px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 80px;
-}
+    .texto2.natacion {
+        font-size: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 80px;
+    }
+
     /* METODO */
     .galeria {
         height: 750px;
@@ -1302,6 +1381,32 @@ a.logo2{
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 20px;
+    }
+
+    /* ACTIVIDADES */
+    .cont6 {
+        height: auto;
+    }
+
+    h4 {
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        font-size: 15px;
+    }
+
+    .item6 {
+        background-color: #000000b2;
+        height: auto;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    iframe.video-act {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+        height: 300px;
     }
 }
 
@@ -1343,12 +1448,37 @@ a.logo2{
         padding-right: 15px;
     }
 
-    /*SEGUIR AGREGANDO*/
     /* METODO */
     .galeria ol li {
         height: 10px;
         border-radius: 0%;
         background-color: #ff7b00;
+    }
+
+    /* ACTIVIDADES */
+    .cont6 {
+        height: auto;
+    }
+
+    h4 {
+        padding-left: 70px;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        font-size: 20px;
+    }
+
+    .item6 {
+        background-color: #000000b2;
+        height: auto;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    iframe.video-act {
+        padding-left: 70px;
+        padding-right: 50px;
+        width: 620px;
+        height: 300px;
     }
 }
 
