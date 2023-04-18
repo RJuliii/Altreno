@@ -549,16 +549,16 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    height: 100vh;
+    height: auto;
     background-size: cover;
     overflow: hidden;
 }
 
 .item4 {
     background-color: #000000b2;
-    height: 100vh;
-    margin-left: 200px;
-    margin-right: 200px;
+    height: 1200px;
+    margin-left: 300px;
+    margin-right: 300px;
 
 
 }
@@ -566,16 +566,16 @@ footer {
 p.texto4 {
     text-align: center;
     color: #ffffff;
-    padding-top: 30px;
+    padding-top: 45px;
     font-family: 'Orbitron', sans-serif;
     font-size: 50px;
 
 }
 
 form.item5 {
-    padding-top: 120px;
+    padding-top: 150px;
     text-align: center;
-    scale: 2;
+    scale: 3;
     color: #ffffff;
     font-family: 'Orbitron', sans-serif;
     font-size: 10px;
@@ -910,6 +910,32 @@ p.texto8 {
         width: 100%;
         height: 290px;
     }
+
+    /* INSCRIPCION */
+    .cont5 {
+        height: auto;
+    }
+
+    .item4 {
+        background-color: #000000b2;
+        height: 500px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    p.texto4 {
+        padding-top: 40px;
+        font-size: 25px;
+
+    }
+
+    form.item5 {
+        padding-top: 20px;
+        scale: 1.1;
+        font-size: 10px;
+
+    }
+
 }
 
 @media only screen and (min-width:480px) and (max-width:799px) {
@@ -1086,6 +1112,32 @@ p.texto8 {
         width: 100%;
         height: 300px;
     }
+
+    /* INSCRIPCION */
+    .cont5 {
+        height: auto;
+    }
+
+    .item4 {
+        background-color: #000000b2;
+        height: 600px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    p.texto4 {
+        padding-top: 10px;
+        font-size: 25px;
+        padding-bottom: 80px;
+
+    }
+
+    form.item5 {
+        padding-top: 0px;
+        scale: 1.5;
+        font-size: 10px;
+
+    }
 }
 
 @media only screen and (min-width:800px) and (max-width:1023px) {
@@ -1248,6 +1300,32 @@ p.texto8 {
         padding-right: 20px;
         width: 100%;
         height: 300px;
+    }
+
+    /* INSCRIPCION */
+    .cont5 {
+        height: auto;
+    }
+
+    .item4 {
+        background-color: #000000b2;
+        height: 700px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    p.texto4 {
+        padding-top: 30px;
+        font-size: 25px;
+        padding-bottom: 120px;
+
+    }
+
+    form.item5 {
+        padding-top: 0px;
+        scale: 1.7;
+        font-size: 10px;
+
     }
 }
 
@@ -1422,6 +1500,32 @@ p.texto8 {
         width: 100%;
         height: 300px;
     }
+
+    /* INSCRIPCION */
+    .cont5 {
+        height: auto;
+    }
+
+    .item4 {
+        background-color: #000000b2;
+        height: 800px;
+        margin-left: 130px;
+        margin-right: 130px;
+    }
+
+    p.texto4 {
+        padding-top: 40px;
+        font-size: 35px;
+        padding-bottom: 150px;
+
+    }
+
+    form.item5 {
+        padding-top: 0px;
+        scale: 2;
+        font-size: 10px;
+
+    }
 }
 
 @media only screen and (min-width:1459px) and (max-width:1900px) {
@@ -1493,6 +1597,31 @@ p.texto8 {
         padding-right: 50px;
         width: 620px;
         height: 300px;
+    }
+    /* INSCRIPCION */
+    .cont5 {
+        height: auto;
+    }
+
+    .item4 {
+        background-color: #000000b2;
+        height: 1000px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    p.texto4 {
+        padding-top: 40px;
+        font-size: 45px;
+        padding-bottom: 250px;
+
+    }
+
+    form.item5 {
+        padding-top: 0px;
+        scale: 2.5;
+        font-size: 10px;
+
     }
 }
 
