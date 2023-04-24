@@ -133,13 +133,30 @@ header {
     border-radius: 15px;
 }
 
-.nav-link {
+.desplegable{
+    background-color: #000000;
+    margin: 0;
+    border-radius: 15px;
+}
+
+
+.dropdown-item{
+    color: #36d7ff !important;
+    font-family: 'Cinzel', serif;
+    font-size: 15px;
+}
+.dropdown-item:hover{
+    background-color: #000000;
+    color: #ffffff!important;
+}
+
+.navegacion {
     color: #36d7ff !important;
     font-family: 'Cinzel', serif;
     font-size: 20px;
 }
 
-.nav-link:hover {
+.navegacion:hover {
     color: #ffffff !important;
     font-size: 20px;
 }
@@ -151,6 +168,7 @@ header {
 .navbar-toggler i {
     color: #36d7ff;
 }
+
 
 
 /*--------------!NOSOTROS!----------*/
