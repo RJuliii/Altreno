@@ -151,6 +151,10 @@ header {
     color: #ffffff !important;
 }
 
+.btn:focus{
+    box-shadow: none;
+}
+
 .navegacion {
     color: #36d7ff !important;
     font-family: 'Cinzel', serif;
