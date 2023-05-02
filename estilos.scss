@@ -235,6 +235,7 @@ h2.sec3 {
             box-shadow: rgba(0, 0, 0, 0.822) 5px 0 10px;
             margin: 100px;
             border-radius: 15px;
+            transition: all 0.4s;
             filter: grayscale(40%);
             .planes__imagen--oro{
                 background-image: url(./imgaltreno/PLANB.png);
@@ -256,7 +257,6 @@ h2.sec3 {
         }
         .planes--oro:hover{
             scale: 1.15;
-            transition: all 0.4s;
             filter: grayscale(0%);
         }
         .planes--plata{
@@ -269,6 +269,7 @@ h2.sec3 {
             margin: 100px;
             border-radius: 15px;
             filter: grayscale(60%);
+            transition: all 0.4s;
             .planes__imagen--plata{
                 background-image: url(./imgaltreno/PLAN2.png);
                 height: 250px;
@@ -289,7 +290,6 @@ h2.sec3 {
         }
         .planes--plata:hover{
                 scale: 1.15;
-                transition: all 0.4s;
                 filter: grayscale(0%);
         }
         .planes--bronce{
@@ -300,6 +300,7 @@ h2.sec3 {
             box-shadow: rgba(0, 0, 0, 0.822) 5px 0 10px;
             margin: 100px;
             border-radius: 15px;
+            transition: all 0.4s;
             filter: grayscale(40%);
             .planes__imagen--bronce{
                 background-image: url(./imgaltreno/PLAN1.png);
@@ -321,7 +322,6 @@ h2.sec3 {
         }
         .planes--bronce:hover{
                 scale: 1.15;
-                transition: all 0.4s;
                 filter: grayscale(0%);
         }
     }
@@ -396,12 +396,12 @@ h2.sec3 {
         scale: 0.5px;
         height: 550px;
         margin-top: 90px;
+        transition: all 1.5s;
     }
     .video__propuesta video:hover {
         opacity: 100%;
         scale: 1.05;
         border-radius: 50px;
-        transition: all 1.5s;
     }
 }
 /*-----------!UBICACION!---------*/

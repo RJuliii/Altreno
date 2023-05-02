@@ -226,6 +226,7 @@ h2.sec3 {
   box-shadow: rgba(0, 0, 0, 0.822) 5px 0 10px;
   margin: 100px;
   border-radius: 15px;
+  transition: all 0.4s;
   filter: grayscale(40%);
 }
 .cont2 .cont_planes .planes--oro .planes__imagen--oro {
@@ -247,7 +248,6 @@ h2.sec3 {
 }
 .cont2 .cont_planes .planes--oro:hover {
   scale: 1.15;
-  transition: all 0.4s;
   filter: grayscale(0%);
 }
 .cont2 .cont_planes .planes--plata {
@@ -260,6 +260,7 @@ h2.sec3 {
   margin: 100px;
   border-radius: 15px;
   filter: grayscale(60%);
+  transition: all 0.4s;
 }
 .cont2 .cont_planes .planes--plata .planes__imagen--plata {
   background-image: url(./imgaltreno/PLAN2.png);
@@ -280,7 +281,6 @@ h2.sec3 {
 }
 .cont2 .cont_planes .planes--plata:hover {
   scale: 1.15;
-  transition: all 0.4s;
   filter: grayscale(0%);
 }
 .cont2 .cont_planes .planes--bronce {
@@ -291,6 +291,7 @@ h2.sec3 {
   box-shadow: rgba(0, 0, 0, 0.822) 5px 0 10px;
   margin: 100px;
   border-radius: 15px;
+  transition: all 0.4s;
   filter: grayscale(40%);
 }
 .cont2 .cont_planes .planes--bronce .planes__imagen--bronce {
@@ -312,7 +313,6 @@ h2.sec3 {
 }
 .cont2 .cont_planes .planes--bronce:hover {
   scale: 1.15;
-  transition: all 0.4s;
   filter: grayscale(0%);
 }
 
@@ -385,12 +385,12 @@ h2.sec3 {
   scale: 0.5px;
   height: 550px;
   margin-top: 90px;
+  transition: all 1.5s;
 }
 .cont3 .video__propuesta video:hover {
   opacity: 100%;
   scale: 1.05;
   border-radius: 50px;
-  transition: all 1.5s;
 }
 
 /*-----------!UBICACION!---------*/
