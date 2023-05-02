@@ -1,0 +1,1524 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;900&family=Sono:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+}
+video.foo {
+    position: fixed;
+
+    min-width: 100%;
+    min-height: 100%;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translateX(-50%) translateY(-50%);
+
+    z-index: -1;
+
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    color: rgba(255, 252, 252, 0.144);
+    font-size: 100px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    scale: 0.75;
+    width: 100%;
+    .boton:hover {
+        display: flex;
+        opacity: 0.5;
+        transform: scale(1.1);
+        transition: all 0.4s ease-in-out;
+    }
+    #altrenoico {
+        opacity: 0.8;
+    }
+    #altrenoico:hover {
+        display: flex;
+        opacity: 0.5;
+        transform: scale(1.1);
+        transition: all 0.4s ease-in-out;
+    }
+}
+
+/*--------------!HEADER!----------*/
+header {
+    height: auto;
+    width: 100%;
+    background-color: #000000;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    opacity: 0.9;
+    .navbar-toggler {
+        border: none;
+    }
+    .navbar-toggler i {
+        color: #36d7ff;
+    }
+    .navbar-collapse {
+        background-color: #000000;
+        padding-left: 20px;
+        margin: 0;
+        border-radius: 15px;
+        .navegacion {
+            color: #36d7ff !important;
+            font-family: 'Cinzel', serif;
+            font-size: 20px;
+        }
+        .navegacion:hover {
+            color: #ffffff !important;
+            font-size: 20px;
+        }
+        .btn:focus{
+            box-shadow: none;
+        }
+        .desplegable {
+            background-color: #000000;
+            margin: 0;
+            border-radius: 15px;
+            .dropdown-item {
+                color: #36d7ff !important;
+                font-family: 'Cinzel', serif;
+                font-size: 15px;
+            }
+            .dropdown-item:hover {
+                background-color: #000000;
+                color: #ffffff !important;
+            }
+        }
+    }
+}
+/*--------------!NOSOTROS!----------*/
+
+.cont1 {
+    background-image: url(./imgaltreno/imgaltreno.bmp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 650px;
+    background-size: cover;
+    .item1 {
+        background-color: rgba(0, 0, 0, 0.459);
+        height: 650px;
+        width: 35%;
+        p.texto1 {
+            color: rgba(255, 255, 255, 0.795);
+            font-size: 50px;
+            font-family: 'Cinzel', serif;
+            padding-top: 150px;
+            overflow: hidden;
+            padding-left: 50px;
+            padding-right: 50px;
+            text-shadow: rgba(255, 255, 255, 0.637) 0px 2px 8px;
+            span .texto2 {
+                color: rgba(255, 255, 255, 0.795);
+                font-size: 50px;
+                font-weight: 100px;
+                font-family: 'Cinzel', serif;
+                overflow: hidden;
+                padding-left: 50px;
+                padding-right: 50px;
+                text-shadow: rgba(253, 253, 253, 0.637) 2px 0px 5px;
+            }
+        }
+        a.boton2 {
+            color: rgba(0, 0, 0, 0.884);
+            background: rgba(1, 74, 3, 0.514);
+            background: linear-gradient(104deg, rgba(1, 74, 3, 0.9444152661064426) 0%, rgba(9, 121, 24, 0.644) 35%, rgba(5, 180, 37, 0.623) 100%);
+            border: 3px solid black;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 40px;
+            font-family: 'Kalam';
+            font-weight: bold;
+            text-shadow: rgba(0, 0, 0, 0.637) 1px 0 10px;
+            display: block;
+            text-align: center;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+        a.boton2:hover {
+            background: rgba(1, 74, 3, 0.274);
+            background: linear-gradient(104deg, rgba(1, 74, 3, 0.39) 0%, rgba(9, 121, 24, 0.377) 35%, rgba(5, 180, 37, 0.397) 100%);
+            border: 3px solid #00000054;
+            color: #000000a4;
+        }
+    }
+}
+
+/*-------------!PLANES!-------------*/
+
+h2.sec3 {
+    background-color: #000000;
+    text-align: center;
+    opacity: 0.8;
+    height: 50px;
+    padding-top: 5px;
+    font-family: 'Rajdhani', sans-serif;
+    color: #ffffff;
+    margin-bottom: 0px;
+}
+.cont2{
+    background-image: url(./imgaltreno/1920.jpg);
+    min-height: 700px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .cont_planes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        text-align: center;
+        .planes__titulo{
+            font-family: 'Bungee', cursive;
+            font-size: 30px;
+            line-height: 35px;
+            text-shadow: rgba(0, 0, 0, 0.404) 0px 2px 5px;
+            margin-top: 20px;
+        }
+        .planes__precio{
+            font-family: 'Alegreya SC', serif;
+            font-size: 40px;
+            line-height: 35px;
+            text-shadow: rgba(0, 0, 0, 0.404) 0px 2px 5px;
+        }
+        .planes__descripcion{
+            padding: 20px;
+            margin: 20px;
+            padding-bottom: 10px;
+            margin-bottom: 0px;
+            font-family: 'Londrina Solid', cursive;
+            font-size: 25px;
+            text-shadow: rgba(0, 0, 0, 0.404) 0px 2px 5px;
+            list-style-type: circle;
+            line-height: 30px;
+        }
+        .planes--oro{
+            width: 400px;
+            min-height: 250px;
+            background-image: linear-gradient(215deg, #e1d37f 0, #c3af51 25%, #a08818 50%, #7e6300 75%, #624300 100%);
+            border: 3px solid rgba(0, 0, 0, 0.644);
+            box-shadow: rgba(0, 0, 0, 0.822) 5px 0 10px;
+            margin: 100px;
+            border-radius: 15px;
+            filter: grayscale(40%);
+            .planes__imagen--oro{
+                background-image: url(./imgaltreno/PLANB.png);
+                height: 250px;
+                display: flex;
+                justify-content: center;
+                background-size: cover;
+                box-shadow: rgba(0, 0, 0, 0.822) 5px 5px 10px;
+                margin-top: 10px;
+            }
+            .planes__boton--oro a i{
+                font-size: 50px;
+                color: #1f9721;
+                text-decoration: none;
+                text-align: center;
+                text-shadow: rgba(18, 59, 2, 0.993) 0px 2px 5px;
+                padding-bottom: 10px;
+            }
+        }
+        .planes--oro:hover{
+            scale: 1.15;
+            transition: all 0.4s;
+            filter: grayscale(0%);
+        }
+        .planes--plata{
+            width: 400px;
+            min-height: 250px;
+            background: rgb(125, 125, 125);
+            background: linear-gradient(225deg, rgba(125, 125, 125, 1) 0%, rgba(91, 91, 91, 1) 38%, rgba(161, 161, 161, 1) 100%);
+            border:3px solid rgba(0, 0, 0, 0.644);
+            box-shadow: rgba(0, 0, 0, 0.822) 5px 0 10px;
+            margin: 100px;
+            border-radius: 15px;
+            filter: grayscale(60%);
+            .planes__imagen--plata{
+                background-image: url(./imgaltreno/PLAN2.png);
+                height: 250px;
+                display: flex;
+                justify-content: center;
+                background-size: cover;
+                box-shadow: rgba(0, 0, 0, 0.822) 5px 0 10px;
+                margin-top: 10px;
+            }
+            .planes__boton--plata a i{
+                font-size: 50px;
+                color: #1f9721;
+                text-decoration: none;
+                text-align: center;
+                text-shadow: rgba(18, 59, 2, 0.993) 0px 2px 5px;
+                margin-top: 150px;
+            }
+        }
+        .planes--plata:hover{
+                scale: 1.15;
+                transition: all 0.4s;
+                filter: grayscale(0%);
+        }
+        .planes--bronce{
+            width: 400px;
+            min-height: 100px;
+            background-image: linear-gradient(205deg, #ae975f 0, #aa8a52 16.67%, #a0763e 33.33%, #905c25 50%, #80420d 66.67%, #752d00 83.33%, #701b00 100%);
+            border: 3px solid rgba(0, 0, 0, 0.644);
+            box-shadow: rgba(0, 0, 0, 0.822) 5px 0 10px;
+            margin: 100px;
+            border-radius: 15px;
+            filter: grayscale(40%);
+            .planes__imagen--bronce{
+                background-image: url(./imgaltreno/PLAN1.png);
+                height: 250px;
+                display: flex;
+                justify-content: center;
+                background-size: cover;
+                box-shadow: rgba(0, 0, 0, 0.822) 5px 0 10px;
+                margin-top: 10px;
+            }
+            .planes__boton--bronce a i{
+                font-size: 50px;
+                color: #1f9721;
+                text-decoration: none;
+                text-align: center;
+                text-shadow: rgba(18, 59, 2, 0.993) 0px 2px 5px;
+                margin-top: 180px;
+            }
+        }
+        .planes--bronce:hover{
+                scale: 1.15;
+                transition: all 0.4s;
+                filter: grayscale(0%);
+        }
+    }
+}
+/* FIN PLANES */
+
+/* !----------NUESTRA PROPUESTA---------*/
+
+.cont3 {
+    background-image: url(./imgaltreno/1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 800px;
+    background-size: cover;
+    .item9 {
+        height: 800px;
+        width: 30%;
+        background-color: rgba(255, 255, 255, 0.541);
+        float: left;
+        p.texto9 {
+            color: #000000;
+            text-align: center;
+            font-family: 'Cinzel', serif;
+            font-size: 40px;
+            font-weight: bold;
+            padding-top: 100px;
+            padding-right: 100px;
+            padding-left: 50px;
+            text-shadow: rgba(0, 0, 0, 0.637) 5px 0 5px;
+        }
+        p.texto10 {
+            text-align: center;
+            font-family: 'Permanent Marker', cursive;
+            font-size: 30px;
+            text-shadow: rgba(0, 0, 0, 0.637) 0px 0 5px;
+            font-weight: 50;
+            padding-right: 100px;
+            padding-left: 50px;
+        }
+        a.boton5 {
+            text-align: center;
+            color: rgba(10, 10, 10, 0.884);
+            background: rgb(0, 36, 34);
+            background: linear-gradient(104deg, rgba(0, 36, 34, 1) 0%, rgba(9, 111, 121, 1) 35%, rgba(0, 183, 221, 1) 100%);
+            border: 3px solid rgb(0, 0, 0);
+            border-radius: 55px;
+            text-decoration: none;
+            font-size: 30px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-family: 'Cinzel', serif;
+            text-shadow: rgba(0, 0, 0, 0.637) 1px 0 10px;
+            display: block;
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-top: 20px;
+        }
+        .boton5:active {
+            background: rgba(0, 36, 34, 0.336);
+            background: linear-gradient(104deg, rgba(0, 36, 34, 0.473) 0%, rgba(9, 112, 121, 0.432) 35%, rgba(0, 184, 221, 0.562) 100%);
+            border: 3px solid rgba(0, 0, 0, 0.438);
+            color: #00000091;
+        }
+    }
+    .video__propuesta video {
+        display: inline-block;
+        border: 1px solid rgba(0, 0, 0, 0.473);
+        box-shadow: #000000 0px 5px 20px;
+        border-radius: 360px;
+        opacity: 70%;
+        scale: 0.5px;
+        height: 550px;
+        margin-top: 90px;
+    }
+    .video__propuesta video:hover {
+        opacity: 100%;
+        scale: 1.05;
+        border-radius: 50px;
+        transition: all 1.5s;
+    }
+}
+/*-----------!UBICACION!---------*/
+.cont4{
+    .mapa iframe {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+/*----------------!PIE DE PAGINA!------*/
+
+footer {
+    background-color: #000000;
+    color: aliceblue;
+    font-size: 15px;
+    text-align: center;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+    width: 100%;
+    height: 120px;
+    .redes i {
+        font-size: 50px;
+        margin-bottom: 20px;
+        letter-spacing: 20px;
+        color: rgb(3, 6, 180);
+    }
+    .redes i:hover {
+        color: aquamarine;
+    }
+}
+
+/*!------BOTON PARA SUBIR-----------!*/
+
+.boton3{
+    .subir {
+        position: fixed;
+        right: 40px;
+        bottom: 40px;
+        background-color: rgba(19, 202, 202, 0.493);
+        padding: 15px;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        border: 2px solid #020202;
+        border-radius: 40px;
+    }
+    .subir:hover {
+        background-color: #109ba0a9;
+        color: #ffffff69;
+    }
+}
+
+/*-------!INSCRIPCION!--------*/
+
+.cont5 {
+    background-image: url(./imgaltreno/3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    .item4 {
+        background-color: #000000b2;
+        min-height: 100vh;
+        margin-left: 300px;
+        margin-right: 300px;
+        p.texto4 {
+            text-align: center;
+            color: #ffffff;
+            padding-top: 45px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 50px;
+        }
+    }
+    form.item5 {
+        padding-top: 220px;
+        text-align: center;
+        scale: 2.5;
+        color: #ffffff;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 10px;
+        padding-bottom: 230px;
+    }
+}
+
+/*---------!ACTIVIDADES!-----------*/
+.cont6 {
+    background-image: url(./imgaltreno/5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 1100px;
+    background-size: cover;
+    .item6 {
+        background-color: #000000b2;
+        height: 1100px;
+        margin-left: 200px;
+        margin-right: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        h4 {
+            padding-left: 100px;
+            padding-top: 20px;
+            padding-bottom: 5px;
+            text-shadow: #00a9c7 0px 3px 10px;
+            color: #19b2d8;
+            font-family: 'Rock Salt', cursive;
+        }
+        iframe.video-act {
+            padding-left: 100px;
+            width: 660px;
+            height: 290px;
+        }
+    }
+}
+
+/*----------!NATACION!--------*/
+
+.cont7 {
+    background-image: url(./imgaltreno/7.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    height: 600px;
+    background-size: cover;
+    .item7 {
+        background-color: #0000007a;
+        text-align: center;
+        height: 700px;
+        .texto2.natacion {
+            font-size: 50px;
+            padding-top: 70px;
+            padding-left: 250px;
+            padding-right: 250px;
+            color: rgba(255, 255, 255, 0.795);
+            font-weight: 100px;
+            font-family: 'Cinzel', serif;
+            overflow: hidden;
+            text-shadow: rgba(253, 253, 253, 0.637) 2px 0px 5px;
+        }
+        a.logo2 {
+            color: rgb(231, 231, 231);
+            text-decoration: none;
+            font-size: 70px;
+            text-shadow: black 0 10px 10px;
+        }
+        .logo2 span {
+            color: rgb(27, 243, 225);
+            text-decoration: none;
+        }
+    }
+}
+/*------!ALTRENO SWIM!------*/
+.altrenoswim {
+    background-image: url(./Imgpileta/fondo.png);
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    background-size: cover;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat (8, 200px);
+    grid-gap: 20px;
+    .foto {
+        width: 100%;
+        background-color: #333;
+        border: 5px solid #ffffff;
+        background-size: cover;
+        background-position: center;
+        filter: grayscale(100%);
+    }
+    .foto1 {
+        background-image: url(./Imgpileta/vertical.jpg);
+        grid-column: 1/2;
+        grid-row: 1/5;
+    }
+    .foto2 {
+        background-image: url(./Imgpileta/aquagym.png);
+        grid-column: 2/4;
+        grid-row: 1/3;
+    }
+    .foto3 {
+        background-image: url(./Imgpileta/swimming-pool-765312_640.jpg);
+        grid-column: 2/3;
+        grid-row: 3/5;
+    }
+    .foto4 {
+        background-image: url(./Imgpileta/natacion\ equipo.png);
+    }
+    .foto5 {
+        background-image: url(./Imgpileta/swimming-78112_640.jpg);
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    .foto6 {
+        background-image: url(./Imgpileta/swimmers-79592_640.jpg);
+        grid-column: 1/2;
+        grid-row: 5/7;
+    }
+    .foto7 {
+        background-image: url(./Imgpileta/asda.jpg);
+        grid-column: 3/4;
+        grid-row: 4/6;
+    }
+    .foto8 {
+        background-image: url(./Imgpileta/swimming-924895_640.jpg);
+        grid-column: 2/4;
+        grid-row: 6/7;
+    }
+}
+.altrenoswim .foto:hover {
+    filter: grayscale(0%);
+    transform: scale(1.01);
+}
+
+/* -----!METODO!------- */
+
+.cont10 {
+    background-image: url(./imgaltreno/2.jpg);
+    background-size: cover;
+    .galeria {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        filter: grayscale(100%);
+        ol li{
+            height: 30px;
+            border-radius: 50%;
+            background-color: #ff7b00;
+        }
+        .carousel-control-prev i {
+            font-size: 35px;
+            color: #f58f00;
+        }
+        .carousel-control-next i {
+            font-size: 35px;
+            color: #f58f00;
+        }
+        img {
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+    .galeria:hover {
+        filter: grayscale(0%);
+    }
+}
+
+
+
+@media only screen and (min-height: 200px) and (max-height: 590px) {
+    /* PAGINA PRINCIPAL */
+    h1 {
+        font-size: 30px;
+    }
+    .botones {
+        scale: 0.3;
+        height: 100px;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+
+@media only screen and (max-width:479px) and (min-width: 320px) {
+    /* PAGINA PRINCIPAL */
+    h1 {
+        font-size: 40px;
+    }
+    .botones {
+        scale: 0.2;
+        height: 100px;
+    }
+    /* NOSOTROS */
+    h2.sec3 {
+        font-size: 20px;
+        height: 35px;
+    }
+    .cont1{
+        min-height: 600px;
+        .item1 {
+            text-align: center;
+            width: 100%;
+            height: 700px;
+            p.texto1 {
+                padding-top: 40px;
+                font-size: 35px;
+                span .texto2 {
+                    font-size: 35px;
+                    }
+            }
+            a.boton2 {
+                margin-left: 60px;
+                margin-right: 60px;
+                color: rgba(10, 10, 10, 0.884);
+                font-size: 25px;
+                }
+            }
+        }
+    footer {
+        height: 90px;
+        font-size: 10px;
+        .redes i {
+            font-size: 30px;
+        }
+    }
+    /*PLANES SE ACOMODA SOLO*/
+    /*NUESTRA PROPUESTA*/
+    .cont3{
+        .item9 {
+            width: 100%;
+            height: 500px;
+            p.texto9 {
+                text-align: center;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-size: 35px;
+                padding-top: 50px;
+            }
+            p.texto10 {
+                font-size: 20px;
+                padding: 10px;
+            }
+            a.boton5 {
+                margin-left: 15px;
+                margin-right: 15px;
+                margin-bottom: 15px;
+                font-size: 20px;
+            }
+        }
+    .video__propuesta video {
+        display: inline-block;
+        border: 1px solid rgba(0, 0, 0, 0.473);
+        box-shadow: #000000 0px 5px 20px;
+        border-radius: 360px;
+        opacity: 70%;
+        scale: 0.5px;
+        height: 300px;
+        margin-top: 90px;
+        margin-bottom: 20px;
+        }
+    }
+    /* NATACION */
+    .cont7 {
+        width: 100%;
+        background-position: center;
+        height: 350px;
+        .item7{
+            a.logo2 {
+                padding-top: 20px;
+                font-size: 40px;
+            }
+            .texto2.natacion {
+                font-size: 20px;
+                padding-left: 30px;
+                padding-right: 30px;
+                padding-top: 80px;
+            }
+        }
+    }
+
+    /* METODO */
+    .cont10{
+        .galeria {
+            height: 350px;
+            width: 100%;
+            padding-top: 30px;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-bottom: 0px;
+            ol li {
+                height: 1px;
+                border-radius: 0%;
+                background-color: #ff7b00;
+            }
+            .carousel-control-prev i {
+                font-size: 15px;
+                color: #f58f00;
+            }
+            .carousel-control-next i {
+                font-size: 15px;
+                color: #f58f00;
+            }
+            img {
+                object-fit: fill;
+                border-radius: 10px;
+                border: 0px;
+                height: 280px;
+            }
+        }
+    }
+
+    /*------!ALTRENO SWIM!------*/
+    .altrenoswim {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat (9, 200px);
+        .foto1 {
+            grid-column: 1/2;
+            grid-row: 1/3;
+        }
+        .foto2 {
+            grid-column: 1/3;
+            grid-row: 5/6;
+        }    
+        .foto3 {
+            grid-column: 1/3;
+            grid-row: 3/5;
+        }    
+        .foto4 {
+            grid-column: 2/3;
+            grid-row: 1/3;
+        }    
+        .foto5 {
+            grid-column: 1/2;
+            grid-row: 6/7;
+        }    
+        .foto6 {
+            grid-column: 1/2;
+            grid-row: 7/9;
+        }
+        .foto7 {
+            grid-column: 2/3;
+            grid-row: 6/8;
+        }
+        .foto8 {
+            grid-column: 2/3;
+            grid-row: 8/9;
+        }
+    }
+    .altrenoswim .foto:hover {
+        transform: scale(1.02);
+    }
+    /* ACTIVIDADES */
+    .cont6 {
+        height: auto;
+        .item6 {
+            background-color: #000000b2;
+            height: auto;
+            margin: 0;
+            h4 {
+                padding-left: 0px;
+                padding-top: 20px;
+                padding-bottom: 5px;
+                font-size: 15px;
+            }
+            iframe.video-act {
+                padding-left: 0px;
+                width: 100%;
+                height: 290px;
+            }
+        }
+    }
+
+    /* INSCRIPCION */
+    .cont5{
+        .item4 {
+            background-color: #000000b2;
+            min-height: 100vh;
+            margin-left: 15px;
+            margin-right: 15px;
+            padding-bottom: 30px;
+            p.texto4 {
+                padding-top: 40px;
+                font-size: 25px;
+            }
+        form.item5 {
+            padding-top: 20px;
+            scale: 1.1;
+            font-size: 10px;
+            padding-bottom: 40px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width:480px) and (max-width:799px) {
+    /* PAGINA PRINCIPAL */
+    h1 {
+        font-size: 60px;
+    }
+    .botones {
+        scale: 0.25;
+        height: 100px;
+    }
+    /* NOSOTROS */
+    h2.sec3 {
+        font-size: 20px;
+        height: 40px;
+    }
+    .cont1{
+        min-height: 600px;
+        .item1 {
+            text-align: center;
+            width: 100%;
+            // height: 700px;
+            padding-top: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            p.texto1 {
+                padding-top: 40px;
+                font-size: 40px;
+                span .texto2 {
+                    font-size: 40px;
+                    }
+            }
+            a.boton2 {
+                margin-left: 100px;
+                margin-right: 100px;
+                color: rgba(10, 10, 10, 0.884);
+                font-size: 25px;
+                }
+            }
+        }
+    footer {
+        .redes i {
+            font-size: 42px;
+        }
+    }
+    /*PLANES SE ACOMODA SOLO*/
+    /*NUESTRA PROPUESTA*/
+    .cont3{
+        .item9 {
+            width: 100%;
+            height: 370px;
+            p.texto9 {
+                text-align: center;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-size: 35px;
+                padding-top: 50px;
+            }
+            p.texto10 {
+                font-size: 20px;
+                padding: 10px;
+            }
+            a.boton5 {
+                margin-left: 15px;
+                margin-right: 15px;
+                margin-bottom: 15px;
+                font-size: 20px;
+            }
+        }
+    .video__propuesta video {
+        display: inline-block;
+        border: 1px solid rgba(0, 0, 0, 0.473);
+        box-shadow: #000000 0px 5px 20px;
+        border-radius: 360px;
+        opacity: 70%;
+        scale: 0.3px;
+        height: 300px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        }
+    .video__propuesta video:hover{
+        opacity: 100%;
+        scale: 1.05;
+        border-radius: 50%;
+        transition: all 1.5s;
+        }
+    }
+    /* NATACION */
+    .cont7 {
+        width: 100%;
+        background-position: center;
+        height: 350px;
+        .item7{
+            a.logo2 {
+                padding-top: 20px;
+                font-size: 40px;
+            }
+            .texto2.natacion {
+                font-size: 30px;
+                padding-left: 50px;
+                padding-right: 50px;
+                padding-top: 80px;
+            }
+        }
+    }
+
+    /* METODO */
+    .cont10{
+        .galeria {
+            height: 350px;
+            width: 100%;
+            padding-top: 30px;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-bottom: 0px;
+            ol li {
+                height: 1px;
+                border-radius: 0%;
+                background-color: #ff7b00;
+            }
+            .carousel-control-prev i {
+                font-size: 15px;
+                color: #f58f00;
+            }
+            .carousel-control-next i {
+                font-size: 15px;
+                color: #f58f00;
+            }
+            img {
+                object-fit: fill;
+                border-radius: 10px;
+                border: 0px;
+                height: 280px;
+            }
+        }
+    }
+
+    /*------!ALTRENO SWIM!------*/
+    .altrenoswim {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat (11, 200px);
+        .foto1 {
+            grid-column: 1/2;
+            grid-row: 1/3;
+        }
+        .foto2 {
+            grid-column: 1/3;
+            grid-row: 6/8;
+        }    
+        .foto3 {
+            grid-column: 1/2;
+            grid-row: 3/6;
+        }    
+        .foto4 {
+            grid-column: 2/3;
+            grid-row: 1/3;
+        }    
+        .foto5 {
+            grid-column: 1/2;
+            grid-row: 8/10;
+        }    
+        .foto6 {
+            grid-column: 2/3;
+            grid-row: 3/6;
+        }
+        .foto7 {
+            grid-column: 2/3;
+            grid-row: 8/10;
+        }
+        .foto8 {
+            grid-column: 1/3;
+            grid-row: 10/11;
+        }
+    }
+    .altrenoswim .foto:hover {
+        transform: scale(1.02);
+    }
+    /* ACTIVIDADES */
+    .cont6 {
+        height: auto;
+        .item6 {
+            background-color: #000000b2;
+            height: auto;
+            margin: 0;
+            h4 {
+                padding-left: 0px;
+                padding-top: 20px;
+                padding-bottom: 5px;
+                font-size: 15px;
+            }
+            iframe.video-act {
+                padding-left: 0px;
+                width: 100%;
+                height: 300px;
+            }
+        }
+    }
+
+    /* INSCRIPCION */
+    .cont5{
+        .item4 {
+            background-color: #000000b2;
+            min-height: 100vh;
+            margin-left: 40px;
+            margin-right: 40px;
+            padding-bottom: 80px;
+            p.texto4 {
+                padding-top: 10px;
+                font-size: 25px;
+                padding-bottom: 80px;
+            }
+        form.item5 {
+            padding-top: 20px;
+            scale: 1.5;
+            font-size: 10px;
+            padding-bottom: 40px;
+            }
+        }
+    }
+}
+@media only screen and (min-width:800px) and (max-width:1023px) {
+    /* PAGINA PRINCIPAL */
+    h1 {
+        font-size: 90px;
+    }
+    .botones {
+        scale: 0.4;
+        height: 100px;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    /* NOSOTROS */
+    h2.sec3 {
+        font-size: 20px;
+        height: 40px;
+    }
+    .cont1{
+        .item1 {
+            width: 50%;
+            p.texto1 {
+                font-size: 40px;
+                span .texto2 {
+                    font-size: 35px;
+                    }
+            }
+            a.boton2 {
+                color: rgba(10, 10, 10, 0.884);
+                font-size: 25px;
+                }
+            }
+        }
+    /*PLANES SE ACOMODA SOLO*/
+    /*NUESTRA PROPUESTA*/
+    .cont3{
+        .item9 {
+            width: 100%;
+            height: 450px;
+            p.texto9 {
+                text-align: center;
+                font-size: 35px;
+                padding-top: 50px;
+            }
+            p.texto10 {
+                font-size: 30px;
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+            a.boton5 {
+                margin-left: 200px;
+                margin-right: 200px;
+                font-size: 20px;
+            }
+        }
+    .video__propuesta video {
+        display: inline-block;
+        border: 1px solid rgba(0, 0, 0, 0.473);
+        box-shadow: #000000 0px 5px 20px;
+        border-radius: 360px;
+        opacity: 70%;
+        scale: 0.8px;
+        height: 500px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        }
+    .video__propuesta video:hover{
+        opacity: 100%;
+        scale: 1.05;
+        border-radius: 50%;
+        transition: all 1.5s;
+        }
+    }
+    /* NATACION */
+    .cont7 {
+        width: 100%;
+        background-position: center;
+        height: 350px;
+        .item7{
+            a.logo2 {
+                padding-top: 20px;
+                font-size: 40px;
+            }
+            .texto2.natacion {
+                font-size: 30px;
+                padding-left: 50px;
+                padding-right: 50px;
+                padding-top: 80px;
+            }
+        }
+    }
+
+    /* METODO */
+    .cont10{
+        .galeria {
+            height: 600px;
+            width: 100%;
+            padding-top: 30px;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-bottom: 0px;
+            ol li {
+                height: 1px;
+                border-radius: 0%;
+                background-color: #ff7b00;
+            }
+            .carousel-control-prev i {
+                font-size: 25px;
+                color: #f58f00;
+            }
+            .carousel-control-next i {
+                font-size: 25px;
+                color: #f58f00;
+            }
+            img {
+                object-fit: cover;
+                border-radius: 5%;
+                border: 0px;
+                height: auto;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+    }
+    /* ACTIVIDADES */
+    .cont6 {
+        height: auto;
+        .item6 {
+            background-color: #000000b2;
+            height: auto;
+            margin: 0;
+            h4 {
+                padding-left: 20px;
+                padding-top: 20px;
+                padding-bottom: 5px;
+                font-size: 15px;
+            }
+            iframe.video-act {
+                padding-left: 20px;
+                padding-right: 20px;
+                width: 100%;
+                height: 300px;
+            }
+        }
+    }
+
+    /* INSCRIPCION */
+    .cont5{
+        .item4 {
+            background-color: #000000b2;
+            min-height: 100vh;
+            margin-left: 100px;
+            margin-right: 100px;
+            padding-bottom: 110px;
+            p.texto4 {
+                padding-top: 30px;
+                font-size: 25px;
+                padding-bottom: 120px;
+            }
+        form.item5 {
+            padding-top: 20px;
+            scale: 1.7;
+            font-size: 10px;
+            padding-bottom: 50px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1023px) and (max-width:1458px) {
+    /* PAGINA PRINCIPAL */
+    h1 {
+        font-size: 95px;
+    }
+    .botones {
+        scale: 0.6;
+        height: 100px;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    /* NOSOTROS */
+    .cont1{
+        .item1 {
+            width: 45%;
+            p.texto1 {
+                font-size: 45px;
+                span .texto2 {
+                    font-size: 40px;
+                    }
+            }
+            a.boton2 {
+                font-size: 30px;
+                }
+            }
+        }
+    /*PLANES SE ACOMODA SOLO*/
+    /*NUESTRA PROPUESTA*/
+    .cont3{
+        .item9 {
+            width: 30%;
+            height: 800px;
+            p.texto9 {
+                text-align: center;
+                padding-top: 100px;
+                font-size: 35px;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+            p.texto10 {
+                font-size: 30px;
+                margin-left: 10px;
+                margin-right: 10px;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+            a.boton5 {
+                font-size: 20px;
+                margin-left: 10px;
+                margin-right: 10px;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+    .video__propuesta video {
+        border: 1px solid rgba(0, 0, 0, 0.473);
+        box-shadow: #000000 0px 5px 20px;
+        border-radius: 360px;
+        opacity: 70%;
+        scale: 0.7px;
+        height: 400px;
+        margin-top: 150px;
+        margin-bottom: 50px;
+        }
+    .video__propuesta video:hover{
+        opacity: 100%;
+        scale: 1.05;
+        border-radius: 50px;
+        transition: all 1.5s;
+        }
+    }
+    /* NATACION */
+    .cont7 {
+        width: 100%;
+        background-position: center;
+        height: 350px;
+        .item7{
+            a.logo2 {
+                padding-top: 20px;
+                font-size: 40px;
+            }
+            .texto2.natacion {
+                font-size: 30px;
+                padding-left: 50px;
+                padding-right: 50px;
+                padding-top: 80px;
+            }
+        }
+    }
+
+    /* METODO */
+    .cont10{
+        .galeria {
+            height: 750px;
+            width: 100%;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-bottom: 0px;
+            padding-top: 30px;
+            ol li {
+                height: 5px;
+                border-radius: 0%;
+                background-color: #ff7b00;
+            }
+            .carousel-control-prev i {
+                font-size: 25px;
+                color: #f58f00;
+            }
+            .carousel-control-next i {
+                font-size: 25px;
+                color: #f58f00;
+            }
+            img {
+                object-fit: fill;
+                border-radius: 5%;
+                border: 0px;
+                height: 700px;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+    /* ACTIVIDADES */
+    .cont6 {
+        height: auto;
+        .item6 {
+            background-color: #000000b2;
+            height: auto;
+            margin-left: 70px;
+            margin-right: 70px;
+            h4 {
+                padding-left: 20px;
+                padding-top: 20px;
+                padding-bottom: 5px;
+                font-size: 15px;
+            }
+            iframe.video-act {
+                padding-left: 20px;
+                padding-right: 20px;
+                width: 100%;
+                height: 300px;
+            }
+        }
+    }
+
+    /* INSCRIPCION */
+    .cont5{
+        .item4 {
+            background-color: #000000b2;
+            min-height: 100vh;
+            margin-left: 100px;
+            margin-right: 100px;
+            padding-bottom: 110px;
+            p.texto4 {
+                padding-top: 30px;
+                font-size: 35px;
+                padding-bottom: 120px;
+            }
+        form.item5 {
+            padding-top: 50px;
+            scale: 1.9;
+            font-size: 10px;
+            padding-bottom: 70px;
+            }
+        }
+    }
+}
+@media only screen and (min-width:1459px) and (max-width:1900px) {
+    /* PAGINA PRINCIPAL */
+    h1 {
+            font-size: 100px;
+    }
+    .botones {
+            scale: 0.7;
+            height: 100px;
+            display: flex;
+            flex-wrap: nowrap;
+    }
+    /* NOSOTROS */
+    .cont1{
+        .item1 {
+            width: 40%;
+            p.texto1 {
+                padding-top: 100px;
+                font-size: 50px;
+                span .texto2 {
+                    font-size: 45px;
+                }
+            }
+            a.boton2 {
+                color: rgba(10, 10, 10, 0.884);
+                margin-left: 180px;
+                font-size: 40px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    }
+    /* METODO */
+    .cont10{
+        .galeria {
+            ol li {
+                height: 10px;
+                border-radius: 0%;
+                background-color: #ff7b00;
+            }
+        }
+    }
+    /* ACTIVIDADES */
+    .cont6 {
+        height: auto;
+        .item6 {
+            background-color: #000000b2;
+            height: auto;
+            margin-left: 100px;
+            margin-right: 100px;
+            h4 {
+                padding-left: 70px;
+                padding-top: 20px;
+                padding-bottom: 5px;
+                font-size: 20px;
+            }
+            iframe.video-act {
+                padding-left: 70px;
+                padding-right: 50px;
+                width: 620px;
+                height: 300px;
+            }
+        }
+    }
+    /* INSCRIPCION */
+    .cont5{
+        .item4 {
+            background-color: #000000b2;
+            min-height: 100vh;
+            margin-left: 100px;
+            margin-right: 100px;
+            padding-bottom: 110px;
+            p.texto4 {
+                padding-top: 30px;
+                font-size: 45px;
+                padding-bottom: 150px;
+            }
+        form.item5 {
+            padding-top: 10px;
+            scale: 2;
+            font-size: 10px;
+            padding-bottom: 50px;
+            }
+        }
+    }
+}
