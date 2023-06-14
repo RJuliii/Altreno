@@ -448,26 +448,145 @@ footer .redes i:hover {
   overflow: hidden;
 }
 .cont5 .item4 {
-  background-color: rgba(0, 0, 0, 0.6980392157);
-  min-height: 100vh;
-  margin-left: 300px;
-  margin-right: 300px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(7, 7, 7, 0.5019607843);
+  height: 100%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 20px;
+  text-align: center;
+  box-shadow: -40px 9px 88px -29px rgb(253, 253, 253);
+  border: 1px solid rgba(255, 255, 255, 0.103);
 }
 .cont5 .item4 p.texto4 {
   text-align: center;
   color: #ffffff;
-  padding-top: 45px;
+  padding-top: 20px;
   font-family: "Orbitron", sans-serif;
-  font-size: 50px;
+  font-size: 45px;
 }
-.cont5 form.item5 {
-  padding-top: 220px;
-  text-align: center;
-  scale: 2.5;
+.cont5 .item4 ::-moz-placeholder {
   color: #ffffff;
-  font-family: "Orbitron", sans-serif;
-  font-size: 10px;
-  padding-bottom: 230px;
+}
+.cont5 .item4 ::placeholder {
+  color: #ffffff;
+}
+.cont5 .item4 .input-l {
+  color: #ffffff;
+  background-color: rgba(7, 7, 7, 0);
+  border: none;
+  border-bottom: 3px solid #000000;
+  width: 550px;
+  text-align: center;
+  margin-top: 20px;
+  font-family: Cinzel;
+  font-size: 25px;
+}
+.cont5 .item4 .input-l:focus {
+  outline: none;
+  font-weight: bold;
+  border-bottom: 3px solid rgba(0, 238, 255, 0.5411764706);
+}
+.cont5 .item4 .input-txt {
+  color: #ffffff;
+  background-color: rgba(248, 241, 241, 0);
+  border: none;
+  border-bottom: 3px solid #000000;
+  width: 550px;
+  text-align: start;
+  margin-top: 50px;
+  resize: none;
+  font-family: Cinzel;
+  font-size: 25px;
+}
+.cont5 .item4 .input-txt:focus {
+  outline: none;
+  font-weight: bold;
+  color: #ffffff;
+  border-bottom: 3px solid rgba(0, 238, 255, 0.5411764706);
+}
+.cont5 .item4 #btn-send {
+  font-size: 20px;
+  background-color: rgb(0, 247, 255);
+  color: rgb(0, 0, 0);
+  margin-top: 30px;
+  margin-bottom: 25px;
+  width: 150px;
+  border: none;
+  text-decoration: none;
+  transition: all 1.5s;
+  border-radius: 20px;
+  padding: 5px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0s;
+  font-family: Cinzel;
+}
+.cont5 .item4 #btn-send:active {
+  background-color: rgb(0, 0, 0);
+  color: rgb(0, 225, 255);
+  border: 2px solid black;
+}
+
+.sec13 {
+  background: rgb(14, 187, 185);
+  background: linear-gradient(144deg, rgb(14, 187, 185) 6%, rgb(17, 189, 187) 33%, rgba(46, 213, 211, 0.9836309524) 57%, rgba(20, 203, 198, 0.950017507) 83%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: nowrap;
+}
+.sec13 .thx .title-thx {
+  font-family: Cinzel;
+  font-size: 45px;
+  font-weight: bold;
+  text-shadow: 0px 1px 2px rgb(15, 8, 8);
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #000;
+}
+.sec13 .thx #subtitle-thx {
+  font-family: Cinzel;
+  font-size: 25px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.sec13 .thx #blurButton {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: cinzel;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 25px;
+  padding-left: 25px;
+  border-radius: 30px;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.sec13 .thx #blurButton .fa-house {
+  color: rgb(14, 187, 185);
+}
+.sec13 .thx #blurButton:hover {
+  background-color: black;
+  color: white;
+}
+.sec13 .thx #blurButton:hover .fa-house {
+  color: rgb(14, 187, 185);
+}
+
+.blur {
+  filter: blur(5px);
 }
 
 /*---------!ACTIVIDADES!-----------*/
@@ -523,7 +642,7 @@ footer .redes i:hover {
   font-weight: 100px;
   font-family: "Cinzel", serif;
   overflow: hidden;
-  text-shadow: rgba(253, 253, 253, 0.637) 2px 0px 5px;
+  text-shadow: rgba(5, 5, 5, 0.849) 2px 0px 5px;
 }
 .cont7 .item7 a.logo2 {
   color: rgb(231, 231, 231);
@@ -685,7 +804,7 @@ footer .redes i:hover {
     flex-wrap: nowrap;
   }
 }
-@media only screen and (max-width: 480px) and (min-width: 320px) {
+@media only screen and (max-width: 479px) and (min-width: 320px) {
   /* PAGINA PRINCIPAL */
   h1 {
     font-size: 40px;
@@ -882,24 +1001,40 @@ footer .redes i:hover {
   }
   /* INSCRIPCION */
   .cont5 .item4 {
-    background-color: rgba(0, 0, 0, 0.6980392157);
-    min-height: 100vh;
-    margin-left: 15px;
-    margin-right: 15px;
-    padding-bottom: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: -40px 9px 88px -29px rgba(253, 253, 253, 0.308);
   }
   .cont5 .item4 p.texto4 {
-    padding-top: 40px;
     font-size: 25px;
   }
-  .cont5 .item4 form.item5 {
-    padding-top: 20px;
-    scale: 1.1;
-    font-size: 10px;
-    padding-bottom: 40px;
+  .cont5 .item4 .input-l {
+    width: 200px;
+    font-size: 15px;
+  }
+  .cont5 .item4 .input-txt {
+    width: 200px;
+    font-size: 12px;
+  }
+  .cont5 .item4 #btn-send {
+    width: 150px;
+    font-size: 15px;
+  }
+  .sec13 .thx .title-thx {
+    font-size: 32px;
+  }
+  .sec13 .thx #subtitle-thx {
+    font-size: 20px;
+  }
+  .sec13 .thx #blurButton {
+    font-size: 20px;
+    padding: 10px;
+  }
+  .blur {
+    filter: blur(5px);
   }
 }
-@media only screen and (min-width: 480px) and (max-width: 799px) {
+@media only screen and (min-width: 480px) and (max-width: 798px) {
   /* PAGINA PRINCIPAL */
   h1 {
     font-size: 60px;
@@ -1101,25 +1236,27 @@ footer .redes i:hover {
   }
   /* INSCRIPCION */
   .cont5 .item4 {
-    background-color: rgba(0, 0, 0, 0.6980392157);
-    min-height: 100vh;
-    margin-left: 40px;
-    margin-right: 40px;
-    padding-bottom: 80px;
+    margin-left: 7%;
+    margin-right: 7%;
+    box-shadow: -40px 9px 88px -29px rgba(253, 253, 253, 0.212);
   }
   .cont5 .item4 p.texto4 {
-    padding-top: 10px;
-    font-size: 25px;
-    padding-bottom: 80px;
+    font-size: 30px;
   }
-  .cont5 .item4 form.item5 {
-    padding-top: 20px;
-    scale: 1.5;
-    font-size: 10px;
-    padding-bottom: 40px;
+  .cont5 .item4 .input-l {
+    width: 350px;
+    font-size: 20px;
+  }
+  .cont5 .item4 .input-txt {
+    width: 350px;
+    font-size: 17px;
+  }
+  .cont5 .item4 #btn-send {
+    width: 200px;
+    font-size: 17px;
   }
 }
-@media only screen and (min-width: 799px) and (max-width: 1024px) {
+@media only screen and (min-width: 799px) and (max-width: 1022px) {
   /* PAGINA PRINCIPAL */
   h1 {
     font-size: 90px;
@@ -1271,22 +1408,24 @@ footer .redes i:hover {
   }
   /* INSCRIPCION */
   .cont5 .item4 {
-    background-color: rgba(0, 0, 0, 0.6980392157);
-    min-height: 100vh;
-    margin-left: 100px;
-    margin-right: 100px;
-    padding-bottom: 110px;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: -40px 9px 88px -29px rgba(253, 253, 253, 0.212);
   }
   .cont5 .item4 p.texto4 {
-    padding-top: 30px;
-    font-size: 25px;
-    padding-bottom: 120px;
+    font-size: 30px;
   }
-  .cont5 .item4 form.item5 {
-    padding-top: 20px;
-    scale: 1.7;
-    font-size: 10px;
-    padding-bottom: 50px;
+  .cont5 .item4 .input-l {
+    width: 450px;
+    font-size: 20px;
+  }
+  .cont5 .item4 .input-txt {
+    width: 450px;
+    font-size: 17px;
+  }
+  .cont5 .item4 #btn-send {
+    width: 150px;
+    font-size: 17px;
   }
 }
 @media only screen and (min-width: 1023px) and (max-width: 1458px) {
@@ -1428,22 +1567,24 @@ footer .redes i:hover {
   }
   /* INSCRIPCION */
   .cont5 .item4 {
-    background-color: rgba(0, 0, 0, 0.6980392157);
-    min-height: 100vh;
-    margin-left: 100px;
-    margin-right: 100px;
-    padding-bottom: 110px;
+    margin-left: 15%;
+    margin-right: 15%;
+    box-shadow: -40px 9px 88px -29px rgba(253, 253, 253, 0.432);
   }
   .cont5 .item4 p.texto4 {
-    padding-top: 30px;
-    font-size: 35px;
-    padding-bottom: 120px;
+    font-size: 40px;
   }
-  .cont5 .item4 form.item5 {
-    padding-top: 50px;
-    scale: 1.9;
-    font-size: 10px;
-    padding-bottom: 70px;
+  .cont5 .item4 .input-l {
+    width: 550px;
+    font-size: 25px;
+  }
+  .cont5 .item4 .input-txt {
+    width: 550px;
+    font-size: 20px;
+  }
+  .cont5 .item4 #btn-send {
+    width: 150px;
+    font-size: 17px;
   }
 }
 @media only screen and (min-width: 1459px) and (max-width: 1900px) {
@@ -1507,21 +1648,23 @@ footer .redes i:hover {
   }
   /* INSCRIPCION */
   .cont5 .item4 {
-    background-color: rgba(0, 0, 0, 0.6980392157);
-    min-height: 100vh;
-    margin-left: 100px;
-    margin-right: 100px;
-    padding-bottom: 110px;
+    margin-left: 15%;
+    margin-right: 15%;
+    box-shadow: -40px 9px 88px -29px rgba(253, 253, 253, 0.212);
   }
   .cont5 .item4 p.texto4 {
-    padding-top: 30px;
     font-size: 45px;
-    padding-bottom: 150px;
   }
-  .cont5 .item4 form.item5 {
-    padding-top: 10px;
-    scale: 2;
-    font-size: 10px;
-    padding-bottom: 50px;
+  .cont5 .item4 .input-l {
+    width: 600px;
+    font-size: 27px;
+  }
+  .cont5 .item4 .input-txt {
+    width: 600px;
+    font-size: 22px;
+  }
+  .cont5 .item4 #btn-send {
+    width: 150px;
+    font-size: 20px;
   }
 }/*# sourceMappingURL=estilos.css.map */

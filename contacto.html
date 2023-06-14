@@ -54,33 +54,16 @@
     <!-- NAVECACION FIN -->
     <main class="cont5">
         <div class="item4">
-            <p class="texto4"><strong>FORMULARIO DE <br> PRE-INSCRIPCIÓN</strong>
-                <form action="" class="item5">
-                    <input name="nombre" type="text" placeholder="Nombre"><br>
-
-                    <input type="text" placeholder="Apellido"><br>
-
-                    <input type="number" placeholder="Telefono"><br>
-
-                    <input type="number" placeholder="Edad"><br>
-
-                    <input type="date"><br>
-
-                    <input type="email" placeholder="E-mail"> <br>
-
-                    <p class="texto5"> GENERO</p>
-                    MASCULINO <input type="radio" name="sexo" value="hombre">
-
-                    FEMENINO <input type="radio" name="sexo" value="mujer"> <br>
-
-                    <textarea name="" id="" cols="30" rows="5"
-                        placeholder="Ingrese: Lesiones y/o Patologias"></textarea><br>
-
-                    Acepto recibir informacion via e-mail<input type="checkbox"><br>
-
-                    Acepto que me contacten por telefono<input type="checkbox"><br>
-
-                    <input type="submit">
+                <form action="enviar.php" method="post">
+                    <p class="texto4"><strong>FORMULARIO DE <br> PRE-INSCRIPCIÓN</strong> <br> </p>
+                    <input type="text" name="nombre" placeholder="Nombre" class="input-l" required><br>
+                    <input type="text" name="apellido" placeholder="Apellido" class="input-l" required><br>
+                    <input type="number" name="edad" placeholder="Edad" class="input-l" required><br>
+                    <input type="date" name="nacimiento" class="input-l" required><br>
+                    <input type="number" name="telefono" class="input-l" placeholder="Telefono" required><br>
+                    <input type="text" name="correo" placeholder="Correo" class="input-l" required> <br>
+                    <textarea name="mensaje" class="input-txt" rows="6" placeholder="Solicite informacion sobre actividades y promociones" required></textarea><br>
+                    <input type="submit" value="enviar" id="btn-send">
                 </form>
         </div>
     </main>
