@@ -16,12 +16,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;1,400&display=swap');
 
-@mixin sizes ($width, $height, $bgcolor){
-    width: $width;
-    height: $height;
-    background-color: $bgcolor;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -161,16 +155,16 @@ header {
             }
         }
         a.boton2 {
-            color: rgba(0, 0, 0, 0.884);
+            color: rgb(0, 0, 0);
             background: rgba(1, 74, 3, 0.514);
-            background: linear-gradient(104deg, rgba(1, 74, 3, 0.9444152661064426) 0%, rgba(9, 121, 24, 0.644) 35%, rgba(5, 180, 37, 0.623) 100%);
+            background: linear-gradient(104deg, rgba(1, 74, 3, 0.9444152661064426) 0%, rgba(12, 196, 36, 0.644) 35%, rgba(5, 180, 37, 0.623) 100%);
             border: 3px solid black;
             border-radius: 50px;
             text-decoration: none;
-            font-size: 40px;
-            font-family: 'Kalam';
-            font-weight: bold;
-            text-shadow: rgba(0, 0, 0, 0.637) 1px 0 10px;
+            font-size: 30px;
+            font-family: 'cinzel';
+            font-style: italic;
+            text-shadow: rgba(77, 238, 104, 0.815) 1px 0 10px;
             display: block;
             text-align: center;
             margin-left: 100px;
@@ -216,12 +210,6 @@ h2.sec3 {
             text-shadow: rgba(0, 0, 0, 0.404) 0px 2px 5px;
             margin-top: 20px;
         }
-        .planes__precio{
-            font-family: 'Alegreya SC', serif;
-            font-size: 40px;
-            line-height: 35px;
-            text-shadow: rgba(0, 0, 0, 0.404) 0px 2px 5px;
-        }
         .planes__descripcion{
             padding: 20px;
             margin: 20px;
@@ -258,6 +246,7 @@ h2.sec3 {
                 text-decoration: none;
                 text-align: center;
                 text-shadow: rgba(18, 59, 2, 0.993) 0px 2px 5px;
+                padding-top: 60px;
                 padding-bottom: 10px;
             }
         }
@@ -292,6 +281,7 @@ h2.sec3 {
                 text-align: center;
                 text-shadow: rgba(18, 59, 2, 0.993) 0px 2px 5px;
                 margin-top: 150px;
+                padding-bottom: 10px;
             }
         }
         .planes--plata:hover{
@@ -323,7 +313,8 @@ h2.sec3 {
                 text-decoration: none;
                 text-align: center;
                 text-shadow: rgba(18, 59, 2, 0.993) 0px 2px 5px;
-                margin-top: 180px;
+                margin-top: 150px;
+                padding-bottom: 10px;
             }
         }
         .planes--bronce:hover{
@@ -681,50 +672,69 @@ footer {
 }
 /*------!ALTRENO SWIM!------*/
 .cont11{
-    background-color: #000000;
+    background-image: url(./Imgpileta/fondo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 20px;
     border: 1.5px solid #454343;
-    .info{
-        @include sizes(100%, 100px, rgba(6, 201, 201, 0.603));
-        border-radius: 10px;
-        box-shadow: inset 0px 0px 15px aqua;
-        filter: grayscale(100%);
-        .texto11{
-            color: rgb(0, 0, 0);
-            font-size: 50px;
-            text-shadow: black 0 10px 10px;
-            text-align: center
-        }
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .horarios{
+        width: 100%;
+        border-collapse: collapse;
+        text-shadow: 1px 1px 2px rgb(0, 0, 0);
+        font-size: 20px;
     }
-    .info--nueva{
-        @extend .info;
-        margin-top: 10px;
-        .texto12{
-            color: rgba(255, 255, 255, 0.795);
-            font-weight: 100px;
-            font-family: 'Cinzel', serif;
-            text-shadow: rgba(253, 253, 253, 0.637) 2px 0px 5px;
-            font-size: 50px;
-            text-align: center;
-            span{
-                color: rgb(0, 0, 0);
-            }
-        }
+    th, td {
+        border: 2px solid rgba(0, 0, 0, 0.445);
+        padding: 8px;
+        text-align: center;
     }
-    .info:hover{
-        filter: grayscale(0%);
+    
+    th {
+        background-color: #36d7ff9a;
+        
+    }
+    
+    .hora-columna {
+        font-weight: bold;
+        background-color: #36d7ff9a;
+        text-shadow: 0px 0px 2px rgb(0, 0, 0);
+    }
+    .hora{
+        background-color: #080808e1;
+        color: #ffffff;
+        text-shadow: 0px 0px 5px rgb(252, 252, 252);
+    }
+    
+    .clase-celda {
+        font-style: italic;
+        font-weight: bold;
+        background-color: #ffffff88;
+    }
+    .sabados{
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        text-shadow: 0px 0px 2px rgb(0, 0, 0);
+        margin-top: 30px;
+        .clase-celda{
+            background-color: #ffffff88;
+            width: 300px;
+        }
     }
 }
 .altrenoswim {
-    background-image: url(./Imgpileta/fondo.png);
-    background-position: center;
-    background-attachment: fixed;
-    min-height: 100vh;
+    background-color: #00a9c7;
+    min-height: 2000px;
     background-size: cover;
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat (8, 200px);
+    grid-template-rows: repeat (10, 200px);
     grid-gap: 20px;
     .foto {
         width: 100%;
@@ -740,37 +750,44 @@ footer {
         grid-row: 1/5;
     }
     .foto2 {
-        background-image: url(./Imgpileta/aquagym.png);
+        background-image: url(./Imgpileta/pileta.jpg);
         grid-column: 2/4;
         grid-row: 1/3;
     }
     .foto3 {
-        background-image: url(./Imgpileta/swimming-pool-765312_640.jpg);
+        background-image: url(./Imgpileta/jubilados.jpg);
         grid-column: 2/3;
-        grid-row: 3/5;
+        grid-row: 3/6;
     }
     .foto4 {
-        background-image: url(./Imgpileta/natacion\ equipo.png);
+        background-image: url(./Imgpileta/jubilados2.jpg);
+        grid-column: 3/4;
+        grid-row: 3/5;
     }
     .foto5 {
-        background-image: url(./Imgpileta/swimming-78112_640.jpg);
-        grid-column: 3/4;
-        grid-row: 3/4;
+        background-image: url(./Imgpileta/pileta2.jpg);
+        grid-column: 1/2;
+        grid-row: 5/6;
     }
     .foto6 {
-        background-image: url(./Imgpileta/swimmers-79592_640.jpg);
-        grid-column: 1/2;
-        grid-row: 5/7;
+        background-image: url(./Imgpileta/infantil.jpg);
+        grid-column: 3/4;
+        grid-row: 6/9;
     }
     .foto7 {
-        background-image: url(./Imgpileta/asda.jpg);
-        grid-column: 3/4;
-        grid-row: 4/6;
+        background-image: url(./Imgpileta/inicial.jpg);
+        grid-column: 1/2;
+        grid-row: 6/9;
     }
     .foto8 {
-        background-image: url(./Imgpileta/swimming-924895_640.jpg);
-        grid-column: 2/4;
-        grid-row: 6/7;
+        background-image: url(./Imgpileta/niños.jpg);
+        grid-column: 2/3;
+        grid-row: 6/9;
+    }
+    .foto9 {
+        background-image: url(./Imgpileta/altreniswun.jpg);
+        grid-column: 3/4;
+        grid-row: 5/6;
     }
 }
 .altrenoswim .foto:hover {
@@ -959,55 +976,124 @@ footer {
 
     /*------!ALTRENO SWIM!------*/
     .cont11{
-        .info{
-            @include sizes(100%, 70px, rgba(6, 201, 201, 0.603));
-            filter: grayscale(100%);
-            .texto11{
-                padding-top: 10px;
-                font-size: 20px;
-            }
+        background-image: url(./Imgpileta/fondo.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 10px;
+        border: 1.5px solid #454343;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .horarios{
+            width: 100%;
+            border-collapse: collapse;
+            text-shadow: 0px 0px 0px rgb(0, 0, 0);
+            font-size: 10px;
         }
-        .info--nueva{
-            .texto12{
-                font-size: 20px;
+        th, td {
+            border: 2px solid rgba(0, 0, 0, 0.445);
+            padding: 0px;
+            text-align: center;
+        }
+        
+        th {
+            background-color: #36d7ff9a;
+            
+        }
+        
+        .hora-columna {
+            font-weight: bold;
+            background-color: #36d7ff9a;
+            text-shadow: 0px 0px 0px rgb(0, 0, 0);
+        }
+        .hora{
+            background-color: #080808e1;
+            color: #ffffff;
+            text-shadow: 0px 0px 0px rgb(252, 252, 252);
+        }
+        
+        .clase-celda {
+            font-style: italic;
+            font-weight: bold;
+            background-color: #ffffff88;
+        }
+        .sabados{
+            display: flex;
+            justify-content: center;
+            font-size: 10px;
+            text-shadow: 0px 0px 0px rgb(0, 0, 0);
+            margin-top: 30px;
+            .clase-celda{
+                background-color: #ffffff88;
+                width: 300px;
             }
         }
     }
+
     .altrenoswim {
+        background-color: #00a9c7;
+        min-height: 2000px;
+        background-size: cover;
+        padding: 20px;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat (9, 200px);
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat (10, 200px);
+        grid-gap: 20px;
+        .foto {
+            width: 100%;
+            background-color: #333;
+            border: 5px solid #ffffff;
+            background-size: cover;
+            background-position: center;
+            filter: grayscale(100%);
+        }
         .foto1 {
-            grid-column: 1/2;
-            grid-row: 1/3;
+            background-image: url(./Imgpileta/vertical.jpg);
+            background-position: top;
+            grid-column: 1/4;
+            grid-row: 1/4;
         }
         .foto2 {
-            grid-column: 1/3;
-            grid-row: 5/6;
-        }    
+            background-image: url(./Imgpileta/pileta.jpg);
+            grid-column: 1/4;
+            grid-row: 4/5 ;
+        }
         .foto3 {
-            grid-column: 1/3;
-            grid-row: 3/5;
-        }    
+            background-image: url(./Imgpileta/jubilados.jpg);
+            grid-column: 1/4;
+            grid-row: 5/8;
+        }
         .foto4 {
-            grid-column: 2/3;
-            grid-row: 1/3;
-        }    
+            background-image: url(./Imgpileta/jubilados2.jpg);
+            grid-column: 1/4;
+            grid-row: 8/10;
+        }
         .foto5 {
-            grid-column: 1/2;
-            grid-row: 6/7;
-        }    
+            background-image: url(./Imgpileta/pileta2.jpg);
+            grid-column: 1/4;
+            grid-row: 10/11;
+        }
         .foto6 {
-            grid-column: 1/2;
-            grid-row: 7/9;
+            background-image: url(./Imgpileta/infantil.jpg);
+            grid-column: 1/4;
+            grid-row: 11/14;
         }
         .foto7 {
-            grid-column: 2/3;
-            grid-row: 6/8;
+            background-image: url(./Imgpileta/inicial.jpg);
+            grid-column: 1/4;
+            grid-row: 14/17;
         }
         .foto8 {
-            grid-column: 2/3;
-            grid-row: 8/9;
+            background-image: url(./Imgpileta/niños.jpg);
+            grid-column: 1/4;
+            grid-row: 17/20;
+        }
+        .foto9 {
+            background-image: url(./Imgpileta/altreniswun.jpg);
+            grid-column: 1/4;
+            grid-row: 20/22;
         }
     }
     .altrenoswim .foto:hover {
@@ -1215,18 +1301,58 @@ footer {
 
     /*------!ALTRENO SWIM!------*/
     .cont11{
-        .info{
-            @include sizes(100%, 70px, rgba(6, 201, 201, 0.603));
-            filter: grayscale(100%);
-            .texto11{
-                padding-top: 10px;
-                font-size: 30px;
-            }
+        background-image: url(./Imgpileta/fondo.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 10px;
+        border: 1.5px solid #454343;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .horarios{
+            width: 100%;
+            border-collapse: collapse;
+            text-shadow: 0px 0px 0px rgb(0, 0, 0);
+            font-size: 15px;
         }
-        .info--nueva{
-            .texto12{
-                font-size: 20px;
-                padding-top: 20px;
+        th, td {
+            border: 2px solid rgba(0, 0, 0, 0.445);
+            padding: 0px;
+            text-align: center;
+        }
+        
+        th {
+            background-color: #36d7ff9a;
+            
+        }
+        
+        .hora-columna {
+            font-weight: bold;
+            background-color: #36d7ff9a;
+            text-shadow: 0px 0px 0px rgb(0, 0, 0);
+        }
+        .hora{
+            background-color: #080808e1;
+            color: #ffffff;
+            text-shadow: 0px 0px 0px rgb(252, 252, 252);
+        }
+        
+        .clase-celda {
+            font-style: italic;
+            font-weight: bold;
+            background-color: #ffffff88;
+        }
+        .sabados{
+            display: flex;
+            justify-content: center;
+            font-size: 15px;
+            text-shadow: 0px 0px 0px rgb(0, 0, 0);
+            margin-top: 30px;
+            .clase-celda{
+                background-color: #ffffff88;
+                width: 300px;
             }
         }
     }
@@ -1236,36 +1362,51 @@ footer {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat (11, 200px);
         .foto1 {
+            background-image: url(./Imgpileta/vertical.jpg);
+            background-position: top;
             grid-column: 1/2;
-            grid-row: 1/3;
+            grid-row: 1/5;
         }
         .foto2 {
-            grid-column: 1/3;
-            grid-row: 6/8;
-        }    
+            background-image: url(./Imgpileta/pileta.jpg);
+            grid-column: 1/4;
+            grid-row: 5/7;
+        }
         .foto3 {
-            grid-column: 1/2;
-            grid-row: 3/6;
-        }    
+            background-image: url(./Imgpileta/jubilados.jpg);
+            grid-column: 2/4;
+            grid-row: 1/5;
+        }
         .foto4 {
-            grid-column: 2/3;
-            grid-row: 1/3;
-        }    
-        .foto5 {
+            background-image: url(./Imgpileta/jubilados2.jpg);
             grid-column: 1/2;
-            grid-row: 8/10;
-        }    
+            grid-row: 7/10;
+        }
+        .foto5 {
+            background-image: url(./Imgpileta/pileta2.jpg);
+            grid-column: 1/4;
+            grid-row: 10/11;
+        }
         .foto6 {
-            grid-column: 2/3;
-            grid-row: 3/6;
+            background-image: url(./Imgpileta/infantil.jpg);
+            grid-column: 1/2;
+            grid-row: 11/15;
         }
         .foto7 {
-            grid-column: 2/3;
-            grid-row: 8/10;
+            background-image: url(./Imgpileta/inicial.jpg);
+            grid-column: 2/4;
+            grid-row: 11/15;
         }
         .foto8 {
-            grid-column: 1/3;
-            grid-row: 10/11;
+            background-image: url(./Imgpileta/niños.jpg);
+            grid-column: 1/4;
+            grid-row: 15/18;
+            background-position: top;
+        }
+        .foto9 {
+            background-image: url(./Imgpileta/altreniswun.jpg);
+            grid-column: 2/4;
+            grid-row: 7/10;
         }
     }
     .altrenoswim .foto:hover {
@@ -1439,20 +1580,56 @@ footer {
         }
     }
     /*ALTRENO SWIM*/
-    .cont11{
-        .info{
-            @include sizes(100%, 70px, rgba(6, 201, 201, 0.603));
-            filter: grayscale(100%);
-            .texto11{
-                padding-top: 10px;
-                font-size: 35px;
-            }
+    .altrenoswim {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat (11, 200px);
+        .foto1 {
+            background-image: url(./Imgpileta/vertical.jpg);
+            background-position: top;
+            grid-column: 1/2;
+            grid-row: 1/5;
         }
-        .info--nueva{
-            .texto12{
-                font-size: 30px;
-                padding-top: 10px;
-            }
+        .foto2 {
+            background-image: url(./Imgpileta/pileta.jpg);
+            grid-column: 1/4;
+            grid-row: 5/7;
+        }
+        .foto3 {
+            background-image: url(./Imgpileta/jubilados.jpg);
+            grid-column: 2/4;
+            grid-row: 1/5;
+        }
+        .foto4 {
+            background-image: url(./Imgpileta/jubilados2.jpg);
+            grid-column: 1/2;
+            grid-row: 7/10;
+        }
+        .foto5 {
+            background-image: url(./Imgpileta/pileta2.jpg);
+            grid-column: 1/4;
+            grid-row: 10/11;
+        }
+        .foto6 {
+            background-image: url(./Imgpileta/infantil.jpg);
+            grid-column: 1/2;
+            grid-row: 11/15;
+        }
+        .foto7 {
+            background-image: url(./Imgpileta/inicial.jpg);
+            grid-column: 2/4;
+            grid-row: 11/15;
+        }
+        .foto8 {
+            background-image: url(./Imgpileta/niños.jpg);
+            grid-column: 1/4;
+            grid-row: 15/18;
+            background-position: top;
+        }
+        .foto9 {
+            background-image: url(./Imgpileta/altreniswun.jpg);
+            grid-column: 2/4;
+            grid-row: 7/10;
         }
     }
     /* ACTIVIDADES */
@@ -1648,7 +1825,59 @@ footer {
             }
         }
     }
-
+    //altrenoswim
+    .altrenoswim {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat (9, 200px);
+        .foto1 {
+            background-image: url(./Imgpileta/vertical.jpg);
+            background-position: center;
+            grid-column: 1/2;
+            grid-row: 1/4;
+        }
+        .foto2 {
+            background-image: url(./Imgpileta/pileta.jpg);
+            grid-column: 2/4;
+            grid-row: 4/6;
+        }
+        .foto3 {
+            background-image: url(./Imgpileta/jubilados.jpg);
+            grid-column: 2/3;
+            grid-row: 1/4;
+        }
+        .foto4 {
+            background-image: url(./Imgpileta/jubilados2.jpg);
+            grid-column: 3/4;
+            grid-row: 1/4;
+        }
+        .foto5 {
+            background-image: url(./Imgpileta/pileta2.jpg);
+            grid-column: 2/4;
+            grid-row: 6/8;
+        }
+        .foto6 {
+            background-image: url(./Imgpileta/infantil.jpg);
+            grid-column: 1/2;
+            grid-row: 8/11;
+        }
+        .foto7 {
+            background-image: url(./Imgpileta/inicial.jpg);
+            grid-column: 2/3;
+            grid-row: 8/11;
+        }
+        .foto8 {
+            background-image: url(./Imgpileta/niños.jpg);
+            grid-column: 3/4;
+            grid-row: 8/11;
+            background-position: top;
+        }
+        .foto9 {
+            background-image: url(./Imgpileta/altreniswun.jpg);
+            grid-column: 1/2;
+            grid-row: 4/8;
+        }
+    }
     /* INSCRIPCION */
     .cont5{
         .item4{
